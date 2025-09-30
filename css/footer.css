@@ -1,0 +1,100 @@
+.site-footer {
+    background: #0f172a;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    height: 200px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 2rem;
+}
+
+.footer-col {
+    flex: 1 1 220px;
+}
+
+.brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand-logo--sm {
+    height: 22px;
+    width: auto;
+}
+
+.copyright {
+    display: block;
+    opacity: .75;
+    margin-top: .5rem;
+}
+
+.social-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .5rem 1rem;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+}
+
+.social-item {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: #fff;
+    opacity: .9;
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+.social-item:hover,
+.social-item:focus-visible {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.social-item i {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255, 255, 255, .35);
+}
+
+.contact a:hover {
+    border-bottom-color: #fff;
+}
+
+.info {
+    text-align: left;
+}
+
+@media (min-width: 900px) {
+    .info {
+        text-align: right;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info {
+        text-align: left;
+    }
+}

@@ -13,18 +13,19 @@
     <!-- Importo los íconos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- CSS de home -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 
 <body>
     <header>
-        <!-- Como nav elijo componente de bootstrap. Abajo importo el js con cdn -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegación principal">
+        <!-- Como nav elijo componente de bootstrap. -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-overlay fixed-top" aria-label="Navegación principal">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="home.html">
-                    <i class="bi bi-airplane"></i>
-                    <span>WanderApp</span>
+
+                <a class="navbar-brand d-flex align-items-center gap-2" href="home.html" aria-label="TraveApp — Inicio">
+                    <img src="assets/img/logo-traveapp.png" alt="TraveApp" class="brand-logo" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -33,7 +34,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto custom-text fw-semibold gap-3">
                         <li class="nav-item"><a class="nav-link active" href="home.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="cards.html">Destinos</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Galería</a></li>
@@ -46,40 +47,108 @@
 
     <main id="home">
 
-        <!-- Hero con las medidas que pide el tp -->
+        <!-- Hero -->
         <section class="hero">
 
             <figure class="hero-media">
-                <img src="assets/img/hero.jpg" alt="Paisaje de montaña" class="hero-img" />
+                <img src="assets/img/hero.avif" alt="Paisaje de montaña" class="hero-img" />
             </figure>
 
-            <div class="container py-4">
-                <h1 class="display-6">Descubrí tu próximo destino</h1>
-                <p class="lead mb-0">
-                    Inspirate con experiencias únicas y planificá tu viaje en minutos.
-                </p>
+        </section>
+
+        <section class="section about section--center">
+            <div class="wrap">
+                <div class="copy">
+                    <h2 class="section-title">Viajá mejor, viajá acompañado</h2>
+                    <p class="section-lead">
+                        En <strong>TraveApp</strong> te ayudamos a <em>descubrir destinos</em> que encajan con vos
+                        y te acompañamos en cada paso del viaje: inspiración, planificación y experiencia.
+                    </p>
+                </div>
             </div>
         </section>
+
+        <section class="section intro section--center">
+            <div class="wrap">
+                <div class="copy panel">
+                    <h2 class="section-title">Explorá cada rincón de TraveApp</h2>
+                    <p class="section-lead">
+                        Nuestra sección de <strong>Destinos</strong> te mostrará opciones destacadas
+                        en formato de tarjetas con imágenes y descripciones para elegir la experiencia
+                        que mejor se adapta a tu estilo de viaje.
+                    </p>
+                    <p class="section-lead">
+                        En la <strong>Galería</strong> vas a encontrar fotografías de lugares a los que viajamos
+                        junto a nuestros clientes: montañas, playas y ciudades que inspiran nuevas aventuras.
+                    </p>
+                    <p class="section-lead">
+                        Y en <strong>Contacto</strong> podés registrarte para recibir promociones y novedades,
+                        o dejarnos tu consulta para que nos pongamos en contacto y planifiquemos juntos tu próxima
+                        experiencia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
-    <footer class="py-4 border-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <small>WanderApp</small>
-            <div class="d-flex align-items-center gap-3">
-                <span class="text-muted small d-flex align-items-center gap-1">
-                    <i class="bi bi-geo-alt"></i> Argentina
-                </span>
-                <a class="text-decoration-none" href="contacto.html" aria-label="Ir a contacto">
-                    <i class="bi bi-envelope"></i>
+
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <!-- marca -->
+            <div class="footer-col brand">
+                <a href="home.html" class="brand-link" aria-label="TraveApp — Inicio">
+                    <img src="assets/img/logo-traveapp.png" alt="TraveApp" class="brand-logo brand-logo--sm">
                 </a>
+                <small class="copyright">© 2025 TraveApp. Todos los derechos reservados.</small>
+            </div>
+
+            <!-- redes (3 columnas) -->
+            <div class="footer-col socials">
+                <ul class="social-grid">
+                    <li>
+                        <a class="social-item" href="https://instagram.com/traveapp" target="_blank" rel="noopener"
+                            aria-label="Instagram @traveapp">
+                            <i class="bi bi-instagram"></i><span>@traveapp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-item" href="https://twitter.com/traveapp" target="_blank" rel="noopener"
+                            aria-label="Twitter @traveapp">
+                            <i class="bi bi-twitter-x"></i><span>@traveapp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-item" href="https://facebook.com/traveapp" target="_blank" rel="noopener"
+                            aria-label="Facebook /traveapp">
+                            <i class="bi bi-facebook"></i><span>/traveapp</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- info y mail -->
+            <div class="footer-col info">
+                <div class="contact">
+                    Argentina · <a href="mailto:armatuviaje@traveapp.com">armatuviaje@traveapp.com</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS (para el toggler de la navbar) -->
+
+
+    <!-- cdn de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
