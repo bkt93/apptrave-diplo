@@ -65,7 +65,7 @@
 }
 
 
-/* Responsivo: en tablets 2 columnas; en móviles 1 columna */
+
 @media (max-width: 991px) {
     .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -114,7 +114,7 @@
     user-select: none;
     pointer-events: none;
     transition: transform .08s linear;
-    /* suave mientras se arrastra/zoomea */
+  
 }
 
 
