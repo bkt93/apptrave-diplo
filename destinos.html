@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TraveApp — Destinos</title>
+    <title>TravelApp — Destinos</title>
 
     <!-- cdn nav -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <div id="navbar"></div>
     </header>
 
-    
+
 
     <main>
 
@@ -31,49 +31,65 @@
         <section class="galeria" aria-label="Galería de destinos">
             <h2 class="galeria-title">Destinos más elegidos</h2>
 
-
             <div class="galeria-grid" role="list">
-                
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-mendoza.jpg"
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-mendoza.jpg"
                     aria-label="Abrir imagen 1">
-                    <img src="/assets/img/galeria/destino-mendoza.jpg" alt="Viña en Mendoza" loading="lazy" />
+                    <picture>
+                        <img src="assets/img/galeria/destino-mendoza.jpg" alt="Viña en Mendoza" loading="lazy">
+                    </picture>
                 </button>
 
-
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-bariloche.jpg"
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-bariloche.jpg"
                     aria-label="Abrir imagen 2">
-                    <img src="/assets/img/galeria/destino-bariloche.jpg" alt="Bariloche" loading="lazy" />
+                    <picture>
+                        <img src="assets/img/galeria/destino-bariloche.jpg" alt="Bariloche" loading="lazy">
+                    </picture>
                 </button>
 
-
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-calafate.jpg"
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-calafate.jpg"
                     aria-label="Abrir imagen 3">
-                    <img src="/assets/img/galeria/destino-calafate.jpg" alt="Cerrito Perito Moreno - El Calafate" loading="lazy" />
+                    <picture>
+                        <img src="assets/img/galeria/destino-calafate.jpg" alt="Glaciar Perito Moreno - El Calafate"
+                            loading="lazy">
+                    </picture>
                 </button>
 
-
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-cataratas.avif"
+                <!-- Tiene AVIF -->
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-cataratas.avif"
                     aria-label="Abrir imagen 4">
-                    <img src="/assets/img/galeria/destino-cataratas.avif" alt="Cataratas del Iguazú" loading="lazy" />
+                    <picture>
+                        <source srcset="assets/img/galeria/destino-cataratas.avif" type="image/avif">
+                        <img src="assets/img/galeria/destino-cataratas.jpg" alt="Cataratas del Iguazú" loading="lazy">
+                    </picture>
                 </button>
 
-
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-ushuaia.jpg"
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-cerro.jpg"
                     aria-label="Abrir imagen 5">
-                    <img src="/assets/img/galeria/destino-cerro.jpg" alt="Cerro de los 7 colores" loading="lazy" />
+                    <picture>
+                        <img src="assets/img/galeria/destino-cerro.jpg" alt="Cerro de los 7 colores" loading="lazy">
+                    </picture>
                 </button>
 
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-cerro.jpg"
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-ushuaia.jpg"
                     aria-label="Abrir imagen 6">
-                    <img src="/assets/img/galeria/destino-ushuaia.jpg" alt="Ushuaia, Tierra del Fuego" loading="lazy" />
+                    <picture>
+                        <img src="assets/img/galeria/destino-ushuaia.jpg" alt="Ushuaia, Tierra del Fuego"
+                            loading="lazy">
+                    </picture>
                 </button>
 
-                <button class="galeria-item" role="listitem" data-full="/assets/img/galeria/destino-baires.avif"
+                <!-- Tiene AVIF -->
+                <button class="galeria-item" role="listitem" data-full="assets/img/galeria/destino-baires.avif"
                     aria-label="Abrir imagen 7">
-                    <img src="/assets/img/galeria/destino-baires.avif" alt="Buenos Aires - El Obelisco" loading="lazy" />
+                    <picture>
+                        <source srcset="assets/img/galeria/destino-baires.avif" type="image/avif">
+                        <img src="assets/img/galeria/destino-baires.jpg" alt="Buenos Aires - Obelisco" loading="lazy">
+                    </picture>
                 </button>
             </div>
         </section>
+
+
 
         <!-- LIGHTBOX -->
         <div class="lightbox" aria-hidden="true" aria-label="Visor de imagen" tabindex="-1">

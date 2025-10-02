@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', loadNav);
         grid.addEventListener("click", (e) => {
             const btn = e.target.closest(".galeria-item");
             if (!btn) return;
-            const src = btn.dataset.full || btn.querySelector("img")?.src;
+            const picImg = btn.querySelector('img');
+            const src = btn.dataset.full || picImg?.currentSrc || picImg?.src;
             if (src) openLightbox(src);
         });
 
@@ -170,7 +171,7 @@ document.addEventListener('DOMContentLoaded', loadNav);
                 applyTransform();
             } else if (e.touches.length === 2) {
                 const newDist = distance(e.touches[0], e.touches[1]);
-                const delta = (newDist - touchStartDist) / 300; 
+                const delta = (newDist - touchStartDist) / 300;
                 zoom(delta);
                 touchStartDist = newDist;
             }
