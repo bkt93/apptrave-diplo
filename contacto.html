@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TraveApp — Contacto</title>
+
+    <!-- cdn nav -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+
+
+    <main>
+
+        <!-- hero reutilizable -->
+        <section class="page-hero hero-contacto">
+
+        </section>
+
+        <section class="contacto" aria-labelledby="contacto-title">
+            <h2 class="contacto-title">Contacto</h2>
+            <form class="contacto-form" action="#" method="post" novalidate>
+
+                <!-- Nombre -->
+                <div class="form-field">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" autocomplete="name"
+                        required>
+                    <small class="hint">Requerido.</small>
+                </div>
+
+                <!-- Email -->
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="tunombre@ejemplo.com" autocomplete="email"
+                        required>
+                    <small class="hint">Usaremos este correo para responderte.</small>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="form-field">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" placeholder="Ej: +54 9 261 555 1234" inputmode="tel"
+                        autocomplete="tel" pattern="[+0-9\s()-]{6,}" required>
+                    <small class="hint">Acepta números, espacios y + (mín. 6 caracteres).</small>
+                </div>
+
+
+                <!-- Selector (destino/interés) -->
+                <div class="form-field">
+                    <label for="interes">¿Qué te interesa?</label>
+                    <select id="interes" name="interes" required>
+                        <option value="" selected disabled>Elegí una opción</option>
+                        <option value="paquetes">Paquetes a destinos populares</option>
+                        <option value="vuelos">Búsqueda de vuelos</option>
+                        <option value="alojamiento">Alojamiento</option>
+                        <option value="seguros">Seguros de viaje</option>
+                        <option value="itinerarios">Armado de itinerarios</option>
+                    </select>
+                    <small class="hint">Requerido.</small>
+                </div>
+
+
+                <!-- Radio (preferencia de contacto) -->
+                <fieldset class="form-field form-field-inline">
+                    <legend>Preferencia de contacto</legend>
+                    <label class="radio">
+                        <input type="radio" name="pref_contacto" value="email" checked>
+                        <span>Email</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="pref_contacto" value="telefono">
+                        <span>Teléfono</span>
+                    </label>
+                </fieldset>
+
+                <!-- Comentario / mensaje -->
+                <div class="form-field form-field-wide">
+                    <label for="mensaje">Comentario</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"
+                        placeholder="Contanos fechas tentativas, cantidad de personas y cualquier detalle útil…"
+                        required></textarea>
+                    <small class="hint">Requerido. Mínimo 10 caracteres.</small>
+                </div>
+
+                <!-- Checkbox (términos) -->
+                <div class="form-field form-field-inline">
+                    <label class="checkbox">
+                        <input type="checkbox" name="acepto" required>
+                        <span>Acepto ser contactado con fines comerciales</span>
+                    </label>
+                </div>
+
+
+                <!-- Botones -->
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-ghost">Reset</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+            </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- cdn para el togler nav -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- llamo mi js -->
+    <script src="js/scripts.js" defer></script>
+
+</body>
+
+</html>

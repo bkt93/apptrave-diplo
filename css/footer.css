@@ -5,7 +5,6 @@
 }
 
 .footer-inner {
-    height: 200px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
@@ -13,6 +12,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem 2rem;
+    height: auto;
 }
 
 .footer-col {
@@ -78,23 +78,23 @@
     border-bottom-color: #fff;
 }
 
-.info {
-    text-align: left;
-}
+.info { text-align: left; }
 
 @media (min-width: 900px) {
-    .info {
-        text-align: right;
-    }
+    .info { text-align: right; }
 }
 
+/* añado esta media query para darle un poco de responsividad al footer */
 @media (max-width: 575.98px) {
     .footer-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1.25rem 1rem;
     }
-
-    .info {
-        text-align: left;
-    }
+    .footer-col { flex: 1 1 100%; }
+    .social-grid { grid-template-columns: 1fr; }
+    .social-item { padding: .5rem 0; }
+    .brand-logo--sm { height: 24px; }
+    .info { text-align: left; }
 }

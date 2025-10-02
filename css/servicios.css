@@ -1,0 +1,48 @@
+.servicios { padding: 2rem 1rem; margin-top: 0.2rem; }
+.servicios-wrap { max-width: 1100px; margin: 0 auto; }
+.servicios-title { font-size: 2rem; margin: 0 0 .25rem; }
+.servicios-lead { opacity: .85; margin: 0 0 1rem; }
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: #fff;
+  color: #0f172a;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 10px rgba(0,0,0,.06);
+  overflow: hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+
+.card-media {
+  height: clamp(140px, 22vw, 190px);
+  background: #ddd center/cover no-repeat;
+}
+.card-body { padding: 1rem; }
+
+.card h3 { font-size: 1.15rem; margin: 0 0 .5rem; }
+.card p { margin: 0; line-height: 1.55; }
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: .85rem;
+  padding: .6rem .75rem;
+  background: #0f172a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+.btn:hover { opacity: .92; }
+
+.media-experiencias { background-image: url('../assets/img/servicios/servicio-experiencia.jpg'); }
+.media-tranquilidad { background-image: url('../assets/img/servicios/servicio-tranquilidad.jpg'); }
+.media-ahorro       { background-image: url('../assets/img/servicios/servicio-ahorro.jpg'); }
